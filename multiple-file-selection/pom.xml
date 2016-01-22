@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.jenkins-ci.plugins</groupId>
+		<artifactId>plugin</artifactId>
+		<version>1.644</version>
+	</parent>
+
+	<groupId>org.cosenonjaviste</groupId>
+	<artifactId>multiple-file-selection-parameter</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>hpi</packaging>
+
+    <name>Jenkins Multiple File Selection Parameter Plugin</name>
+  <description>
+    This plugin reads a list of folders and list contained files into a multiple selection widget.
+    The selected elements are loaded into the environment as variable. Each file in a different parameter.
+  </description>
+
+  <licenses>
+    <license>
+      <name>Apache License</name>
+      <comments>All source code is under the Apache License. 
+       This plugin was gratly inspired by https://wiki.jenkins-ci.org/display/JENKINS/Filesystem+List+Parameter+Plug-in </comments>
+    </license>
+  </licenses>
+  
+<!--   <scm> -->
+<!--     <connection>scm:git:ssh://github.com/</connection> -->
+<!--     <developerConnection>scm:git:ssh://git@github.com/</developerConnection> -->
+<!--     <url>https://github.com/</url> -->
+<!--   </scm> -->
+
+<!--   <url>https://wiki.jenkins-ci.org/display/JENKINS/</url> -->
+
+
+
+	<developers>
+		<developer>
+			<id>dzambon</id>
+			<name>Davide Zambon</name>
+			<email>dav.zambon@gmail.com</email>
+		</developer>
+	</developers>
+
+
+	<!-- get every artifact through repo.jenkins-ci.org, which proxies all the 
+		artifacts that we need -->
+	<repositories>
+		<repository>
+			<id>repo.jenkins-ci.org</id>
+			<url>http://repo.jenkins-ci.org/public/</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>repo.jenkins-ci.org</id>
+			<url>http://repo.jenkins-ci.org/public/</url>
+		</pluginRepository>
+	</pluginRepositories>
+	
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
+			<scope>test</scope>
+	    </dependency>
+	</dependencies>
+
+</project>

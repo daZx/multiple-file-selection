@@ -1,0 +1,29 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define"
+ xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+
+	<f:entry title="Name" field="name" >
+    	<f:textbox  />
+	</f:entry>
+	
+	<f:entry title="Description" field="description">
+		<f:textarea name="parameter.description" value="${instance.description}" codemirror-mode="${app.markupFormatter.codeMirrorMode}" codemirror-config="${app.markupFormatter.codeMirrorConfig}" previewEndpoint="/markupFormatter/previewDescription" />
+	</f:entry>
+
+	<f:entry title="Path(s)" field="paths" >
+		<f:textbox default="${instance.paths}" />
+	</f:entry>
+
+   <f:entry title="Size of selection box:" field="size" >
+		<f:textbox default="${instance.selectSize}" />
+	</f:entry>
+	
+	<f:entry title="Accept file regexp" field="regExp" >
+		<f:textbox default="${instance.regExp}" />
+	</f:entry>
+	
+	<f:entry title="Use complete path" field="completePath" >
+		<f:checkbox checked="${instance.completePath}"/>
+	</f:entry>
+
+</j:jelly>

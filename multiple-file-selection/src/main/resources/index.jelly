@@ -1,0 +1,7 @@
+<?jelly escape-by-default='true'?>
+<!--
+  This view is used to render the installed plugins page.
+-->
+<div>
+  Plugin lists file system objects to choose as build parameter
+</div>
