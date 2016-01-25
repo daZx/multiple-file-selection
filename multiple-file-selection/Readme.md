@@ -6,10 +6,18 @@ Testing the results!
 ```bash
 #/bin/bash!
 
-for((i=0;i<${TEST_size};i+=1))
+echo  "LOOP "
+
+NAME="TEST"   << put here the name you have given to the variable
+
+NN="${NAME}_SIZE"
+
+echo "NN=$NN"
+
+for((i=0;i<$NN;i+=1))
     do
-      VAL="TEST_${i}"
+      VAL="${NAME}_${i}"
       echo $VAL
-      echo " FILE ====>>" `eval echo \$\{$VAL\}`
+      echo " SELECTED FILE ====>>" `eval echo \$\{$VAL\}`
     done
 ```
