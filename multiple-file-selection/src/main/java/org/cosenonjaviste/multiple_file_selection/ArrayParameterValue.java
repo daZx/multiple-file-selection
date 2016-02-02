@@ -16,7 +16,7 @@ import org.kohsuke.stapler.export.Exported;
 /**
  * This class is used to export several different values into the shell.
  * 
- * Given a NAME of the paramenter and a list of string like: "alice", "bob", "34",
+ * Given a NAME of the parameter and a list of string like: "alice", "bob", "34",
  * they are exported as:
  * <ul>
  * <li>NAME_0 = alice </li>
@@ -24,6 +24,8 @@ import org.kohsuke.stapler.export.Exported;
  * <li>NAME_2 = 34</li>
  * <li>NAME_SIZE = 3</li>
  * </ul>
+ * 
+ * If the list is empty, NAME_SIZE = 0 
  * 
  * @author dzambon
  *

@@ -130,6 +130,7 @@ public class MultipleFileSelectionParameterDefinition extends
 
 	@Override
 	public ParameterValue createValue(StaplerRequest request) {
+		//not sure what to do in this case!
 		return null;
 	}
 
