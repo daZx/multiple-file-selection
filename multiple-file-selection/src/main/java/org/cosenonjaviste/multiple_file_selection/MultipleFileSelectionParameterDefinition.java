@@ -22,7 +22,6 @@ import org.apache.commons.lang.StringUtils;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.QueryParameter;
 import org.kohsuke.stapler.StaplerRequest;
-import org.kohsuke.stapler.export.Exported;
 
 /**
  * @author dzambon
@@ -41,7 +40,6 @@ public class MultipleFileSelectionParameterDefinition extends
 	private String paths;
 	private String regexp;
 	private String size ="4";
-//	private List<String> filelist = new ArrayList<String>();
 	private FilenameFilter filter;
 	private boolean completePath =false;
 

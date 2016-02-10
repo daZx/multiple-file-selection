@@ -8,7 +8,7 @@
 
 	<groupId>org.cosenonjaviste</groupId>
 	<artifactId>multiple-file-selection-parameter</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.1</version>
 	<packaging>hpi</packaging>
 
     <name>Jenkins Multiple File Selection Parameter Plugin</name>
@@ -21,18 +21,15 @@
     <license>
       <name>Apache License</name>
       <comments>All source code is under the Apache License. 
-       This plugin was gratly inspired by https://wiki.jenkins-ci.org/display/JENKINS/Filesystem+List+Parameter+Plug-in </comments>
+       This plugin was greatly inspired by https://wiki.jenkins-ci.org/display/JENKINS/Filesystem+List+Parameter+Plug-in </comments>
     </license>
   </licenses>
   
-<!--   <scm> -->
-<!--     <connection>scm:git:ssh://github.com/</connection> -->
-<!--     <developerConnection>scm:git:ssh://git@github.com/</developerConnection> -->
-<!--     <url>https://github.com/</url> -->
-<!--   </scm> -->
-
-<!--   <url>https://wiki.jenkins-ci.org/display/JENKINS/</url> -->
-
+  <scm>
+    <connection>scm:git:ssh://github.com/daZx/multiple-file-selection</connection>
+    <developerConnection>scm:git:ssh://git@github.com/daZx/multiple-file-selection</developerConnection>
+    <url>https://github.com/daZx/multiple-file-selection</url>
+  </scm>
 
 
 	<developers>
